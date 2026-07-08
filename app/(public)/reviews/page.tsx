@@ -1,7 +1,7 @@
+
 "use client";
 
 import { useState } from 'react';
-import { Star } from 'lucide-react';
 
 const reviews = [
   { id: 1, name: "Ahmed Khan", rating: 5, date: "2024-12-15", comment: "Best biryani ever! Highly recommended!", verified: true },
@@ -12,7 +12,7 @@ const reviews = [
 const StarRating = ({ rating }: { rating: number }) => (
   <div className="flex gap-0.5">
     {[1,2,3,4,5].map((star) => (
-      <Star key={star} className={`w-4 h-4 ${star <= rating ? 'fill-yellow-400 text-yellow-400' : 'text-gray-300'}`} />
+      <span key={star} className={`text-lg ${star <= rating ? 'text-yellow-400' : 'text-gray-300'}`}>★</span>
     ))}
   </div>
 );

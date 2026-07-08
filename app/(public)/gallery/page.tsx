@@ -1,7 +1,8 @@
+
 "use client";
 
 import { useState } from 'react';
-import { GALLERY_IMAGES } from '@/lib/constants';
+import { GALLERY_IMAGES } from '../../../lib/constants';
 
 export default function GalleryPage() {
   const [filter, setFilter] = useState("All");

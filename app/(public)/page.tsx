@@ -1,9 +1,9 @@
-import { CONTACT } from '@/lib/constants'
+
+import { CONTACT } from '../../lib/constants'
 
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-red-50 to-white">
-      {/* Hero Section */}
       <div className="container mx-auto px-4 py-20 text-center">
         <h1 className="text-5xl md:text-6xl font-bold text-red-700 mb-6">
           Delicious Restaurant
@@ -21,7 +21,6 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* Features */}
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="text-center p-6 bg-white rounded-xl shadow-md">
@@ -42,7 +41,6 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* Contact */}
       <div className="bg-gray-50 py-12 border-t">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
