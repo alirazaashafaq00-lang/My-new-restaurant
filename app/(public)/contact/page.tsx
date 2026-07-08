@@ -1,7 +1,13 @@
 "use client";
 
 import { useState } from 'react';
-import { CONTACT } from '@/lib/constants';
+
+const CONTACT = {
+  email: "alirazaashafaq00@gmail.com",
+  phone: "03256590195",
+  address: "123 Main Street, Lahore, Pakistan",
+  whatsapp: "03256590195",
+};
 
 export default function ContactPage() {
   const [loading, setLoading] = useState(false);
@@ -58,5 +64,5 @@ export default function ContactPage() {
         </div>
       </div>
     </div>
-  )
+  );
 }
